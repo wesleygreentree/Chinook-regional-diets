@@ -299,7 +299,7 @@ summer55.map <- ggplot() +
 summer55.map
 
 ## 3B summer >= 62 cm ----
-summer62 %>% group_by(GridID) %>% tally() %>% view() # all have at least 10
+#summer62 %>% group_by(GridID) %>% tally() %>% view() # all have at least 10
 
 summer62.grid.levels <- sort(unique(summer62$GridID))
 names(summer62)
@@ -636,8 +636,8 @@ winter62.map10 <- ggplot() +
 winter62.map10
 
 ggarrange(winter62.map.all, winter62.map10, labels = c("A", "B"))
-ggsave("figures/winter/winter-size-maps.PNG", width = 25, height = 13, units = "cm",
-       bg = "white", dpi = 600)
+ggsave("figures/winter/winter-size-maps.PNG", 
+       width = 26, height = 13, units = "cm", bg = "white", dpi = 600)
 
 ## 5. Map of PFMAs given size regulations ----
 # PFMA shapefile available at Pacific Salmon Foundation Marine Data Centre
