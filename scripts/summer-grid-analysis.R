@@ -68,7 +68,7 @@ attr(grid, "grid") # 17_5
 salish.ch <- readRDS("data/out/Salish-Sea-Chinook-salmon-diet.RDS")
 nrow(salish.ch) # 2655
 table(salish.ch$Season) # 1589 summer, 1066 
-nrow(subset(salish.ch, TotalWeight == 0)) # 575
+nrow(subset(salish.ch, TotalWeight == 0)) # 575 # includes stomachs at PFMA spatial level of resolution
 
 # calculate number of sampling days for discussion and the number of days where
 # samples could be collected in the Salish Sea
