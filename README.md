@@ -2,11 +2,11 @@
 
 Data and code for Greentree et al. Adult Chinook salmon diets identify distinct forage communities in the Salish Sea.
 
-If using these data for analyses of Chinook salmon diet, see `Salish-Sea-Chinook-salmon-diet.RDS`. Additional data are available on request (please email wgreentree@outlook.com, uvicsalmondiet@gmail.com).
+If using these data for analyses of Chinook salmon diet, see `data/out/Salish-Sea-Chinook-salmon-diet.RDS`. Additional data are available on request (please email wgreentree@outlook.com, uvicsalmondiet@gmail.com).
 
 **Order of scripts:**
 
-1.  `data-processing.R`: takes raw catch and stomach contents data from Adult Salmon Diet Program database and processes it into proportional diet composition data. The input data are not provided to protect angler confidentiality, meaning that the first six sections cannot be run (up to 6. Save data). Sections 7 and 8 can be run with the output of section 6.
+1.  `data-processing.R`: takes raw catch and stomach contents data from Adult Salmon Diet Program database and processes it into proportional diet composition data. The input data are not provided to protect angler confidentiality, meaning that the first six sections cannot be run (up to section 6: Save data). Sections 7 and 8 can be run with the output of section 6.
 2.  `select-grid.R`: determines the optimal grid given the sampling coverage.
 3.  `summer-grid-analysis.R` and `winter-grid-analysis.R`: runs cluster analysis and supporting analyses/visualizations in summer and winter.
 4.  `grid-position-sensitivity.R`: runs sensitivity analyses for the optimal number of clusters and if the grid selection procedure is robust.
