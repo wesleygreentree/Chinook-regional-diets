@@ -46,8 +46,15 @@ both.seasons <- rbind(select(summer.salish.ch, Season, PFMA, `Final Length (cm)`
 both.seasons.length <- subset(both.seasons, !is.na(`Final Length (cm)`))
 nrow(both.seasons.length)
 
+# by season and PFMA
 length.summary <- both.seasons.length %>% group_by(Season, PFMA) %>% 
   summarize(median_length = median(`Final Length (cm)`))
+
+# by season
+both.seasons.length %>% group_by(Season) %>% 
+  summarize(median_length = median(`Final Length (cm)`),
+            min_length = min(`Final Length (cm)`),
+            max_length = max(`Final Length (cm)`))
 
 both.seasons.length.N <- both.seasons.length %>% group_by(Season, PFMA) %>% tally()
 
