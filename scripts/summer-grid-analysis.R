@@ -381,7 +381,7 @@ summer.map <- ggplot() +
 summer.map
 
 ## 7. Make dendrogram ----
-df <- data.frame(x = 1:23, y = rep(-0.018, 23), 
+df <- data.frame(x = 1:23, y = rep(-0.016, 23), 
                  region = c("Haro Strait", "Haro Strait", "Howe Sound",
                             rep("Strait of Georgia", 20)))
 df$region[df$x %in% c(4, 5, 6)] <- "Juan de Fuca Strait"
@@ -520,8 +520,8 @@ ggarrange(summer.map,
           ggarrange(summer.dendrogram, summer.region.diet, ncol = 1, labels = c("B", "C"),
                     vjust = 1.95), 
           nrow = 1, widths = c(0.58, 0.42), labels = c("A"), hjust = -1, vjust = 1.95)
-ggsave("figures/summer/summer-regions.PNG", width = 12, height = 8, units = "in",
-       bg = "white", dpi = 600)
+ggsave("figures/summer/summer-regions2.PNG", width = 12, height = 8, units = "in",
+       bg = "white", dpi = 1600)
 
 
 ## 9. Principal coordinate analysis (PCoA) ----
