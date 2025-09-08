@@ -643,7 +643,7 @@ winter62.map10 <- ggplot() +
 winter62.map10
 
 ggarrange(winter62.map.all, winter62.map10, labels = c("A", "B"))
-ggsave("figures/winter/winter-size-maps.PNG", 
+ggsave("figures/winter/winter-62-maps.PNG", 
        width = 26, height = 13, units = "cm", bg = "white", dpi = 600)
 
 ## 5. Map of PFMAs given size regulations ----
