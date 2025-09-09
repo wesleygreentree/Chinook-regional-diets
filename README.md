@@ -2,7 +2,7 @@
 
 Data and code for Greentree et al. Adult Chinook salmon diets identify distinct forage communities in the Salish Sea.
 
-If using these data for analyses of Chinook salmon diet, see `data/out/Salish-Sea-Chinook-salmon-diet.RDS`. Additional data are available on request (please email wgreentree@outlook.com, uvicsalmondiet@gmail.com).
+If using these data for analyses of Chinook salmon diet, see `data/out/Salish-Sea-Chinook-salmon-diet.RDS`. Additional data are available on request (please email wesleygreentree@uvic.ca, uvicsalmondiet@gmail.com).
 
 **Order of scripts:**
 
