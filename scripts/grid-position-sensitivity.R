@@ -612,6 +612,10 @@ table(summer.location.indicators.prop$Group)
 summer.location.indicators.prop$Group <- factor(summer.location.indicators.prop$Group,
   levels = c("Pacific herring", "Pacific sand lance", "Northern anchovy", "Surfperch",
              "Myctophid", "Squid", "Pandalid"))
+view(subset(summer.location.indicators.prop, Group %in% c("Myctophid", "Squid", "Pandalid") &
+              Proportion > 0))
+# myctophid, squid, and pandalid look very similar because proportions are nearly identical
+# (these are very rare indicator species in summer)
 
 ggplot() +
   geom_sf(data = bc.coast) +
