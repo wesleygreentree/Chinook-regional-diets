@@ -191,7 +191,7 @@ saveRDS(summer.salish.ch, "data/out/summer-diet-for-size-sensitivity.RDS")
 # 4. Cluster analysis ----
 
 ncol(summer.salish.ch[19:34]) # 16
-summer.grid.prop <- data.frame(matrix(NA, nrow = 16, ncol = 0)) # need to change
+summer.grid.prop <- data.frame(matrix(NA, nrow = 16, ncol = 0)) 
 
 for (i in 1:length(summer.n10.grids)) {
   grid.subset <- subset(summer.salish.ch, GridID == summer.n10.grids[i])
