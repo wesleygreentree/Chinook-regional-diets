@@ -183,7 +183,7 @@ saveRDS(winter.salish.ch, "data/out/winter-diet-for-size-sensitivity.RDS")
 # 4. Cluster analysis ----
 
 ncol(winter.salish.ch[19:36]) # 16
-winter.grid.prop <- data.frame(matrix(NA, nrow = 18, ncol = 0)) # need to change
+winter.grid.prop <- data.frame(matrix(NA, nrow = 18, ncol = 0)) 
 
 for (i in 1:length(winter.n10.grids)) {
   grid.subset <- subset(winter.salish.ch, GridID == winter.n10.grids[i])
