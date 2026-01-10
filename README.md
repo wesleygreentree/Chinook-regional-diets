@@ -1,6 +1,6 @@
 # Adult Chinook salmon diets in the Salish Sea
 
-Data and code for Greentree et al. Adult Chinook salmon diets identify distinct forage communities in the Salish Sea.
+Data and code for Greentree, W.L., Duguid, W.D.P., Quindazzi, M.J., Maher, B., & Juanes, F. Using the diet composition of adult Chinook salmon to understand the regional structure of Salish Sea forage communities. Submitted to Fisheries Oceanography.
 
 If using these data for analyses of Chinook salmon diet, see `data/out/Salish-Sea-Chinook-salmon-diet.RDS`. Additional data are available on request (please email wesleygreentree@uvic.ca, uvicsalmondiet@gmail.com).
 
